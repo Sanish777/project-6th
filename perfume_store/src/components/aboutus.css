@@ -1,0 +1,58 @@
+.section {
+    padding: 50px 60px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+.header {
+    padding: 100px 20px;
+    text-align:center;
+    background: url("../img/perfume2.jpg") center/cover no-repeat;
+    color:white;
+}
+.header p{
+    color:white;
+}
+.philosophy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+h1,h2{
+    text-align:center;
+}
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+.philosophy img, .mission img {
+    height: 250px;
+    border-radius: 10px;
+    margin:auto;
+}
+.text {
+    width: 50%;
+    padding: 20px;
+}
+.fragrance-layers{
+    background-color: #f5f3fc;
+}
+.fragrance-layers .notes {
+    display: flex;
+    justify-content: space-around;
+}
+.mission p{
+    text-align: center;
+}
+.note {
+    width: 30%;
+    text-align: center;
+}
+.note img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
