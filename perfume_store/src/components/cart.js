@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import PayWithKhalti from "../components/khalti/PayWithKhalti";
 import "./cart.css";
 
 const Cart = ({ cart, removeFromCart, updateQuantity }) => {
@@ -90,11 +91,20 @@ const Cart = ({ cart, removeFromCart, updateQuantity }) => {
                 Continue Shopping
               </a>
               <h2>Total: Rs. {totalPrice.toFixed(2)}</h2>
+              <PayWithKhalti
+                amount={totalPrice.toFixed(2)}
+                product={{ id: "123", name: "Test Product" }}
+                customer={{
+                  name: "John Doe",
+                  email: "john@example.com",
+                  phone: "9800000000",
+                }}
+              />
             </div>
           </>
         )}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
